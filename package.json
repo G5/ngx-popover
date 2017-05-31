@@ -4,7 +4,7 @@
   "description": "Simple popover control for your angular2 applications using bootstrap3.",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
@@ -61,6 +61,7 @@
     "zone.js": "^0.7.6"
   },
   "scripts": {
-    "tsc": "ngc -p tsconfig-aot.json"
+    "tsc": "ngc -p tsconfig-aot.json",
+    "package": "gulp package && cp ./build/package/* ./"
   }
 }
